@@ -1,0 +1,19 @@
+<% if user_signed_in? %>
+	<h1>You're signed in!</h1>
+	<h2>Here's what we can help you make things Happening'</h2>
+	
+ <% else %>
+<div class="center hero-unit">
+     <h1>TJ's First Coding Project</h1>
+
+      <h2>
+        Hello you, welcome to
+       <a href="http://omrails.com/">Happening, Inc</a>
+       and it's first application.
+     </h2>
+
+      <%= link_to "Join Now!", new_user_registration_path,                                  
+                        class: "btn btn-large btn-primary" %> 
+</div> 
+
+<% end %>
